@@ -3,7 +3,6 @@ import '../css/App.scss';
 import Navigation from './Navigation';
 import ToDosContainer from './ToDosContainer';
 import ToDonesContainer from './ToDonesContainer';
-import News from './News';
 import Help from '../views/Help';
 import NotFound from '../views/NotFound';
 import { Switch, Route } from 'react-router-dom';
@@ -19,9 +18,6 @@ class App extends React.Component {
               <div className="left">
                 <ToDosContainer></ToDosContainer>
                 <ToDonesContainer></ToDonesContainer>
-              </div>
-              <div className="right">
-                <News></News>
               </div>
             </div>
           </Route>

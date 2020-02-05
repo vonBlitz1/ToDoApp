@@ -98,38 +98,6 @@ $btnBg: #184b43;
         }
       }
     }
-    .news-container {
-      width: 400px;
-      max-height: 500px;
-      overflow: scroll;
-      padding: 20px;
-      background: $navBg;
-      border-radius: 10px;
-      margin: 10px;
-      .title {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      a {
-        color: white;
-        text-decoration: none;
-      }
-      .news-item {
-        margin-bottom: 10px;
-        background: $btnBg;
-        border-radius: 10px;
-        .img-container {
-          img {
-            width: 100%;
-            border-radius: 10px 10px 0 0;
-          }
-        }
-        .text-container {
-          padding: 10px;
-        }
-      }
-    }
   }
   .help {
     padding: 10px;

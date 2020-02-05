@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-import newsReducer from './newsReducer';
 
 const initialState = JSON.parse(localStorage.getItem('spa-todo-app')) || [];
 
@@ -28,5 +27,4 @@ const todoReducer = (state = initialState, action) => {
 
 export default combineReducers({
   todos: todoReducer,
-  news: newsReducer
 });
