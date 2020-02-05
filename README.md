@@ -8,6 +8,6 @@ To use the app please type what you would like to keep track on and press enter 
 
 Happy toDos.
 
-https://vonblitz1.github.io/toDoApp/
+https://todo-app.firatyildirim.now.sh/
 
 ![preview](/src/images/toDoApp.png)
