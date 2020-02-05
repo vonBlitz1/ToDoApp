@@ -1,0 +1,143 @@
+$mainBg: #20272a;
+$navBg: #1d2226;
+$inputBg: #3c6862;
+$btnBg: #184b43;
+* {
+  font-family: monospace;
+}
+
+.app {
+  height: 100vh;
+  background: $mainBg;
+  color: white;
+  overflow: scroll;
+  .btn {
+    border: none;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70px;
+    background: $btnBg;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $navBg;
+    min-height: 60px;
+    padding: 10px;
+    a {
+      color: white;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .todos-container {
+      padding: 20px 10px;
+      width: 400px;
+      .todo-form {
+        .input-item {
+          input {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background: $inputBg;
+            margin-right: 10px;
+            color: white;
+            font-size: 1.2em;
+            min-width: 300px;
+            margin-bottom: 5px;
+          }
+        }
+        .warning-container {
+          color: red;
+          margin-left: 10px;
+          min-height: 15px;
+        }
+      }
+      .todos {
+        padding-top: 30px;
+
+        .todo-item {
+          padding: 5px 10px;
+          background: $inputBg;
+          margin: 10px 0;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+    .todones-container {
+      padding: 10px;
+      width: 400px;
+
+      .todones-item {
+        padding: 5px 10px;
+        background: $inputBg;
+        margin: 10px 0;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          text-decoration: line-through;
+          opacity: 0.5;
+        }
+      }
+    }
+    .news-container {
+      width: 400px;
+      max-height: 500px;
+      overflow: scroll;
+      padding: 20px;
+      background: $navBg;
+      border-radius: 10px;
+      margin: 10px;
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .news-item {
+        margin-bottom: 10px;
+        background: $btnBg;
+        border-radius: 10px;
+        .img-container {
+          img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+          }
+        }
+        .text-container {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .help {
+    padding: 10px;
+  }
+  .notFound {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
